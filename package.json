@@ -1,0 +1,16 @@
+{
+  "name": "DiceBot",
+  "version": "1.0.0",
+  "description": "This is a dice bot for Descord.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": "https://github.com/maruru2100/DiceBot.git",
+  "author": "maruru2100 <sutraiku@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0"
+  }
+}
