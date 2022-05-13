@@ -36,6 +36,32 @@ This is a dice bot for Descord.
 
 ## 起動前提手順
 
+### Windows版起動前準備
+
+1. powershellを管理者として起動して以下を入力する。
+    ```
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+    ```
+    
+1. コマンドプロンプトを管理者として起動する。
+1. 以下のコマンドを入力して、`git node.js yarn`を導入する。
+    ```
+    choco install -y git
+    choco install -y yarn
+    choco install -y nodejs
+    ```
+    1. 開発も行う場合は`choco install -y vscode`も実施する。
+1. PCを再起動しコードを配置する任意のフォルダを作成する。
+1. 作成したフォルダ内でコマンドプロンプトを起動する。
+1. コマンドプロンプトで以下コードを入力しgit からコードをcloneする。
+    ```
+    git clone https://github.com/maruru2100/DiceBot.git
+    ```
+1. `cd DiceBot` をコマンドプロンプトで入力しディレクトリを変更する。
+1. `yarn install` をコマンドプロンプトで入力する。
+
+### Mac版起動準備
+
 ***TODO***  
 windowsなら Chocolatey を入れさせて、nodeとyarnの最新をいれてもらえばいいかなとか思ってる。  
 入れたら、このリポジトリを`git clone`してもらって、  
